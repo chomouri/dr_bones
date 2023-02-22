@@ -1,3 +1,6 @@
+"""Dice Rolling functions"""
+__lver__ = '1.0.1'
+
 import random
 import re
 

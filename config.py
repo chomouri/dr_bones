@@ -1,3 +1,7 @@
+"""Configuration Script for Discord Bot"""
+__lver__ = '1.0.1'
+
+# Built-in Imports
 from configparser import ConfigParser
 from datetime import datetime
 import os
