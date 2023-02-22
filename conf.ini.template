@@ -1,31 +1,4 @@
-[pales_pg]
-# ip, pupillae, pales, password
-host=
-database=pupillae
-user=pales
-password=
-
-[fons_pg]
-# ip, pupillae, fons, password
-host=
-database=pupillae
-user=fons
-password=
-
-[fons_gui]
-# Fully Qualified Directory Names
-photo_path_dir=
-saved_img_dir=
-log_dir=
-
-[fons_img]
-# 400, 400 is suggested
-scale_x=400
-scale_y=400
-temp_dir=
-
 [discord]
 bones_token=
-test_bot_token=
 message_max=2000
 search_max=10
