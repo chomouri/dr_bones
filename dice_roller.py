@@ -1,3 +1,6 @@
+"""Dice Rolling functions"""
+__lver__ = '1.0.2'
+
 import random
 import re
 
@@ -56,16 +59,19 @@ def process_roll(message):
 
 def parse_roll(message):
     error_msg = []
+    print(message)
+    if message == "char":
+        return roll_char_stats()
     #Split into groups, keeping trigger as index [0]
     roll_grps = message.split(" ")
     #Remove empty.
-    if len(roll_grps) < 2:
+    if len(roll_grps) == 0:
         inv_grp = True
         error_msg.append("No dice to roll")
-    elif len(roll_grps) == 2:
+    elif len(roll_grps) == 1:
         # Check if an argument in the roll is invalid.
         inv_grp = False
-        current_grp = roll_grps[1]
+        current_grp = roll_grps[0]
         quant_side = re.split(r'd', current_grp, 1)
         if len(quant_side) == 2:
             quant = quant_side[0]
