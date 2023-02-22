@@ -4,6 +4,9 @@ from discord.ext import commands
 import config
 import dice_roller as dr
 
+meta = {'version': '1.0.0'}
+project_version = config.get_project_version(meta)
+
 client = commands.Bot(
     command_prefix='$',
     help_command=None,
@@ -13,7 +16,7 @@ client = commands.Bot(
 
 @client.event
 async def on_ready() -> None:
-    print("DISCORD: We have logged in as {0.user}".format(client))
+    print(f"DISCORD BOT: We have logged in as {client.user} using {project_version}")
 
 @client.command()
 async def roll(ctx):
