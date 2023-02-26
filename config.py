@@ -1,5 +1,5 @@
 """Configuration Script for Discord Bot"""
-__lver__ = '1.0.1'
+__lver__ = '1.0.2'
 
 # Built-in Imports
 from configparser import ConfigParser
